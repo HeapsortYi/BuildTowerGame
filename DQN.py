@@ -182,9 +182,9 @@ def playGame(args):
 def main():
     parser = argparse.ArgumentParser(description='Description of your program')
     parser.add_argument('-m', '--mode', help='Train / Run', required=True)
-    # args = vars(parser.parse_args())
-    args = {}
-    args['mode'] = 'Run'
+    args = vars(parser.parse_args())
+    # args = {}
+    # args['mode'] = 'Run'
     playGame(args)
 
 
